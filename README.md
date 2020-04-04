@@ -29,7 +29,7 @@ I've learnt so many things in the way of making this application 📝 and ways t
     Clone this repo by typing following command
 
     ```shell
-    git clone https://github.com/cyrus43/covid-19kenya
+    git clone https://github.com/Opensource-254/covid-19-web-react
     ```
 
 2. **Start developing.**
