@@ -1,0 +1,113 @@
+// _variable
+@import "../Layout/variables";
+
+header {
+  text-align: $align-center;
+  margin-bottom: 1rem;
+  .LogoWrapper {
+    img.appIcon {
+      max-width: $imgMaxWidth;
+      width: $logoWidth;
+    }
+
+    @media only screen and (max-width: 768px) {
+      img.appIcon {
+        width: $logoWidthMobile;
+      }
+    }
+
+    img.appIcon {
+      animation: App-logo-spin infinite 10s linear;
+      pointer-events: none;
+    }
+
+    @keyframes App-logo-spin {
+      from {
+        transform: rotate(0deg);
+      }
+      to {
+        transform: rotate(360deg);
+      }
+    }
+  }
+
+  .Title {
+    margin-top: 1rem;
+  }
+
+  .Navigation {
+    margin-top: 2.2rem;
+
+    ul {
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      li {
+        margin-right: 20px;
+        &:last-child {
+          margin-right: 0px;
+        }
+        a {
+          transition: $basic-transition;
+          -webkit-transition: $basic-transition;
+          background-color: $secondaryColor;
+          background-color: $secondaryColor;
+          padding: 10px 20px;
+          border-radius: $small-radius;
+          color: $darkColor;
+          text-decoration: none;
+          box-shadow: $box-shadow-normal;
+          text-transform: uppercase;
+          font-size: 12px;
+          font-weight: 500;
+
+          &.active,
+          &:hover,
+          &:focus {
+            background-color: $primaryColor;
+            color: $lightColor;
+          }
+        }
+      }
+    }
+  }
+
+  // Responsive navigation
+  @media only screen and (max-width: 768px) {
+    .Navigation {
+      ul {
+        flex-flow: wrap;
+
+        li {
+          margin-right: 10px;
+          margin-bottom: 32px;
+          &:last-child {
+            margin-right: 0px;
+            margin-bottom: 0px;
+          }
+        }
+      }
+    }
+  }
+
+  // @media only screen and (max-width: 768px) {
+  //   .Navigation {
+  //     position: fixed;
+  //     bottom: 0;
+  //     z-index: 99;
+  //     background: #353c5d;
+  //     width: 100%;
+  //     left: 0;
+  //     margin: auto;
+  //     padding: 18px 1px 0px 0px;
+
+  //     ul {
+  //       li {
+  //         a {
+  //           padding: 8px 15px;
+  //         }
+  //       }
+  //     }
+  //   }
+  // }
+}

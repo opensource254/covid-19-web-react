@@ -1,0 +1,42 @@
+// Global variables
+
+// 💻 Layout & app elements
+$containerWidth: 920px; // App container width
+$logoWidth: 110px;  // Logo width
+$logoWidthMobile: $logoWidth - 30 !default;  // mobile Logo width
+
+// 🎨 Appearance
+$primaryColor: #02d587; //#02D587;
+$secondaryColor: #fff;
+$warningColor: #FF7043;
+$yellowColor: #FFC107;
+$dangerColor: #ef5350;
+$darkColor: #353c5d;    //uses font color
+$lightColor: #EFF1F6;   //usedas BG color
+
+$small-radius: 5px;
+$large-radius: 10px;
+$box-shadow-normal: 0px 3px 21px 0px rgba(53, 60, 93, 0.11);
+
+// 📝 Typography
+$bodyFont: 'Rubik', sans-serif;
+$headingFont: 'Fira Sans', sans-serif;
+$bodyFontsize: 15px;
+
+$h1-font-size: $bodyFontsize * 2.5 !default;
+$h2-font-size: $bodyFontsize * 2 !default;
+$h3-font-size: $bodyFontsize * 1.75 !default;
+$h4-font-size: $bodyFontsize * 1.5 !default;
+$h5-font-size: $bodyFontsize * 1.25 !default;
+$h6-font-size: $bodyFontsize !default;
+
+// 🟩 Image responsive
+$imgMaxWidth: 100%;
+
+// 👉 Alignment
+$align-center: center;
+$align-left: left;
+$align-right: right;
+
+// Transitions
+$basic-transition: all 200ms ease;

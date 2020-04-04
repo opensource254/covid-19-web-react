@@ -1,0 +1,215 @@
+// _variables, _reset, _grid
+@import "./variables";
+@import "./reset";
+@import "./grid";
+
+// Global fonts
+@import url("https://fonts.googleapis.com/css2?family=Fira+Sans:wght@300;400;500;600;700;800;900&family=Rubik:wght@300;400;500;700;900&display=swap");
+
+// Main
+html,
+body {
+  font-family: $bodyFont;
+  font-size: $bodyFontsize;
+  background-color: $lightColor;
+  color: $darkColor;
+}
+
+a {
+  color: $primaryColor;
+}
+a:hover {
+  color: darken($color: $primaryColor, $amount: 6);
+}
+a:visited {
+  color: darken($color: $primaryColor, $amount: 10);
+}
+
+a.interactive {
+  color: $primaryColor;
+  -webkit-transition: all 0.4s ease-in;
+  transition: all 0.4s ease-in;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  border-bottom: 2px solid $primaryColor;
+  -webkit-transition: 0.4s all ease-out;
+  transition: 0.4s all ease-out;
+}
+a.interactive:hover {
+  color: lighten($color: $primaryColor, $amount: 60);
+  box-shadow: $primaryColor 0px -5.5rem 0px inset;
+  border-bottom: 3px solid $primaryColor;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: $headingFont;
+  font-weight: 700;
+}
+
+h1,
+.h1 {
+  font-size: $h1-font-size;
+}
+h2,
+.h2 {
+  font-size: $h2-font-size;
+}
+h3,
+.h3 {
+  font-size: $h3-font-size;
+}
+h4,
+.h4 {
+  font-size: $h4-font-size;
+}
+h5,
+.h5 {
+  font-size: $h5-font-size;
+}
+h6,
+.h6 {
+  font-size: $h6-font-size;
+}
+
+main {
+    margin-top: 60px;
+}
+
+.Container {
+  max-width: $containerWidth;
+  margin: 20px auto 0rem;
+}
+@media only screen and (max-width: 768px) {
+  .Container {
+    margin: 5px 25px 0rem;
+  }
+  main {
+    margin-top: 50px;
+  }
+}
+
+.badge {
+  display: initial;
+  padding: 2px 15px;
+  font-size: 13px;
+  border-radius: 25px;
+}
+.badge--success {
+  background-color: lighten($color: $primaryColor, $amount: 52);
+  color: $primaryColor;
+}
+.badge--warning {
+  background-color: lighten($color: $warningColor, $amount: 32);
+  color: $warningColor;
+}
+.badge--danger {
+  background-color: lighten($color: $dangerColor, $amount: 32);
+  color: $dangerColor;
+}
+.badge--yellow {
+  background-color: lighten($color: $yellowColor, $amount: 40);
+  color: $yellowColor;
+}
+
+.heading--title {
+    text-align: $align-center;
+    margin-bottom: 30px;
+}
+
+hr {
+  border-style: dashed;
+  border-color: #e2e2e2;
+  border-width: 1px;
+  margin-top: 2rem;
+  margin-bottom: 1.5rem;
+}
+
+@media only screen and (max-width: 768px) {
+  .mb-sm-20 {
+    margin-bottom: 20px !important;
+  }
+}
+@media only screen and (min-width: 768px) {
+  .mb-lg-20 {
+    margin-bottom: 20px;
+  }
+}
+.text-center {
+  text-align: $align-center;
+}
+.text-left {
+  text-align: $align-left;
+}
+.text-right {
+  text-align: $align-right;
+}
+
+.Sticky-Search-bar {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0px;
+  z-index: 99;
+}
+
+.Search {
+  border: 0;
+  width: 100%;
+  height: 55px;
+  padding: 10px 20px;
+  background-color: $secondaryColor ;
+  border-radius: $small-radius ;
+  box-shadow: $box-shadow-normal;
+  -webkit-transition: all 0.4s ease;
+  transition: all 0.4s ease;
+  margin-bottom: 20px;
+  font-family: Rubik;
+  font-size: 15px;
+  color: #353c7a;
+
+  &:focus, &:active {
+    outline: none;
+    box-shadow: 0px 8px 15px rgba(75, 72, 72, 0.13);
+  }
+}
+
+.search-icon {
+  position: absolute;
+  top: 11px;
+  right: 15px;
+  width: 35px;
+  height: 35px;
+  overflow: hidden;
+
+  .icon {
+    position: relative;
+    top: 5px;
+    left: 8px;
+    width: 50%;
+    height: 50%;
+    opacity: 1;
+    border-radius: 50%;
+    border: 3px solid #c7d0f8;
+    -webkit-transition: opacity 0.25s ease, -webkit-transform 0.43s cubic-bezier(0.694, 0.048, 0.335, 1);
+    transition: opacity 0.25s ease, -webkit-transform 0.43s cubic-bezier(0.694, 0.048, 0.335, 1);
+    transition: opacity 0.25s ease, transform 0.43s cubic-bezier(0.694, 0.048, 0.335, 1);
+    transition: opacity 0.25s ease, transform 0.43s cubic-bezier(0.694, 0.048, 0.335, 1), -webkit-transform 0.43s cubic-bezier(0.694, 0.048, 0.335, 1);
+
+    &:after {
+      content: "";
+      position: absolute;
+      bottom: -8px;
+      right: -4px;
+      width: 4px;
+      border-radius: 3px;
+      -webkit-transform: rotate(-45deg);
+      transform: rotate(-45deg);
+      height: 10px;
+      background-color: #c7d0f8;
+    }
+  }
+}

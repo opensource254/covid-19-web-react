@@ -1,0 +1,22 @@
+// _Variables
+@import "../Layout/variables";
+
+.Card {
+  background-color: $secondaryColor;
+  border-radius: $small-radius;
+  padding: 30px 25px;
+  box-shadow: $box-shadow-normal;
+
+  hr {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+  }
+
+  p {
+      line-height: 1.5;
+  }
+
+  .author {
+      line-height: 1.6;
+  }
+}

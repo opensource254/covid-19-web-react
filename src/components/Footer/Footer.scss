@@ -1,0 +1,36 @@
+//  _variable
+@import "../Layout/variables";
+
+footer {
+  text-align: $align-center;
+  padding: 20px;
+  line-height: 1.8;
+
+  .footer-credit {
+    span {
+      vertical-align: middle;
+    }
+    span.heart {
+      color: #e91e63;
+      font-size: 16px;
+    }
+    span.react {
+      color: #46d4ff;
+      font-size: 18px;
+    }
+    div.spinning {
+      animation: spinning infinite 10s linear;
+      display: inline-block;
+      margin: 0;
+      padding: 0;
+    }
+    @keyframes spinning {
+      from {
+        transform: rotate(0deg);
+      }
+      to {
+        transform: rotate(360deg);
+      }
+    }
+  }
+}
