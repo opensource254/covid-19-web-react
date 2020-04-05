@@ -76,17 +76,17 @@ class allCountries extends React.Component {
                                     <CountryWidget
                                         key={countryData.country}
                                         countryName={countryData.country}
-                                        totalCases={countryData.cases.toLocaleString("en-IN")}
-                                        todayCases={countryData.todayCases.toLocaleString("en-IN")}
-                                        activeCases={countryData.active.toLocaleString("en-IN")}
-                                        totalDeaths={countryData.deaths.toLocaleString("en-IN")}
+                                        totalCases={countryData.cases.toLocaleString("en-US")}
+                                        todayCases={countryData.todayCases.toLocaleString("en-US")}
+                                        activeCases={countryData.active.toLocaleString("en-US")}
+                                        totalDeaths={countryData.deaths.toLocaleString("en-US")}
                                         todayDeaths={countryData.todayDeaths.toLocaleString(
-                                            "en-IN"
+                                            "en-US"
                                         )}
                                         totalRecovered={countryData.recovered.toLocaleString(
-                                            "en-IN"
+                                            "en-US"
                                         )}
-                                        critical={countryData.critical.toLocaleString("en-IN")}
+                                        critical={countryData.critical.toLocaleString("en-US")}
                                     />
                                 ))}
                             </div>

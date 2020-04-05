@@ -57,7 +57,7 @@ class IndexPage extends React.Component {
                                 <Widget
                                     styleName="warning"
                                     align="center"
-                                    value={globalData.cases.toLocaleString("en-IN")} // .toLocaleString(navigator.language, { minimumFractionDigits: 0 })
+                                    value={globalData.cases.toLocaleString("en-US")} // .toLocaleString(navigator.language, { minimumFractionDigits: 0 })
                                     label="Confirmed cases"
                                 />
                             </div>
@@ -65,7 +65,7 @@ class IndexPage extends React.Component {
                                 <Widget
                                     styleName="success"
                                     align="center"
-                                    value={globalData.recovered.toLocaleString("en-IN")}
+                                    value={globalData.recovered.toLocaleString("en-US")}
                                     label="Recovered"
                                 />
                             </div>
@@ -73,7 +73,7 @@ class IndexPage extends React.Component {
                                 <Widget
                                     styleName="danger"
                                     align="center"
-                                    value={globalData.deaths.toLocaleString("en-IN")}
+                                    value={globalData.deaths.toLocaleString("en-US")}
                                     label="Deaths"
                                 />
                             </div>
