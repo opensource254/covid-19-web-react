@@ -42,12 +42,14 @@ I've learnt so many things in the way of making this application 📝 and ways t
     gatsby develop
     ```
 
-    or
+   ### or run production
 
     ```shell
+    
+    cd covid-19-web-react/
     npm i
-    cd covid-19kenya/
-    npm start
+    npm run build
+    npm run serve
     ```
 
 3. **Open the source code and start editing!**
