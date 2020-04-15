@@ -8,6 +8,7 @@
 # COVID-19 Outbreak Tracker
 
 Woohoo!! 🎉🎉 Finally its shipped in the real-world. 📦
+It's live [here](https://covid19-ke.netlify.com/)
 
 Well, Upon learning & practicing **ReactJS & Gatsby** I have came up with an idea to build a real-world application & my minds popped out with this awesome idea! ⚡ Been building this since last 6-7 days. ⏱ Aaaand finally its here. **MY FIRST EVER OPENSOURCE CONTRIBUTION!** Self learning really paid off! 💯
 
