@@ -7,6 +7,8 @@
 
 # COVID-19 Outbreak Tracker
 
+[![Gitter](https://badges.gitter.im/opensource-254/community.svg)](https://gitter.im/opensource-254/community?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge)
+
 Woohoo!! 🎉🎉 Finally its shipped in the real-world. 📦
 It's live [here](https://covid19-ke.netlify.com/)
 
