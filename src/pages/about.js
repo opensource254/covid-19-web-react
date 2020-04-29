@@ -27,7 +27,7 @@ class AboutPage extends React.Component {
                                     <span role="img" aria-label="Computer">
                                         💻
                                     </span>{" "}
-                                    Author:{" "}
+                                    Authors:{" "}
                                     <a
                                         className="interactive"
                                         href="http://github.com/cyrus43/"
@@ -36,29 +36,47 @@ class AboutPage extends React.Component {
                                     >
                                         Cyrus Mbithi
                                     </a>
-                                    . Also I'm pretty active on{" "}
+                                    &
+                                    <a
+                                        className="interactive"
+                                        href="http://github.com/BILLthebuilder"
+                                        target="_blank"
+                                        rel="noopener noreferrer"
+                                    >
+                                        Bill Kariri
+                                    </a>
+                                    . Follow us on twitter{" "}
+                                     too{" "}
+                                    <span role="img" aria-label="LOL">
+                                        😁
+                                    </span>
                                     <a
                                         className="interactive"
                                         href="https://twitter.com/cyrusmbithi92"
                                         target="_blank"
                                         rel="noopener noreferrer"
                                     >
-                                        Twitter
+                                        Cyrus
                                     </a>{" "}
-                                    though.{" "}
-                                    <span role="img" aria-label="LOL">
-                                        😁
-                                    </span>
+                                    &
+                                    <a
+                                        className="interactive"
+                                        href="https://twitter.com/billkariri"
+                                        target="_blank"
+                                        rel="noopener noreferrer"
+                                    >
+                                        Bill
+                                    </a>{" "}
                                 </li>
 
                                 <li>
                                     <span role="img" aria-label="Pull request">
                                         🔄
                                     </span>{" "}
-                                    If you'd like to contribute, submit a <strong>PR</strong> here{" "}
+                                    If you'd like to contribute or have issue with the site submit an issue here{" "}
                                     <a
                                         className="interactive"
-                                        href="https://github.com/cyrus43/covid-19kenya"
+                                        href="https://github.com/Opensource-254/covid-19-web-react"
                                         target="_blank"
                                         rel="noopener noreferrer"
                                     >
