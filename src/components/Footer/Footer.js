@@ -10,8 +10,7 @@ class Footer extends React.Component {
                     Data source from{" "}
                     <a
                         className="interactive"
-                        href="http://worldometers.info"
-                        target="_blank"
+                        href="#"
                         rel="noopener noreferrer"
                     >
                         www.worldometers.info
