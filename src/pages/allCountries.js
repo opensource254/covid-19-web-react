@@ -76,19 +76,17 @@ class allCountries extends React.Component {
                                     <CountryWidget
                                         key={countryData.country}
                                         countryName={countryData.country}
-                                        totalCases={countryData.cases.toLocaleString("en-US")}
-                                        todayCases={countryData.todayCases.toLocaleString("en-US")}
-                                        activeCases={countryData.active.toLocaleString("en-US")}
-                                        totalDeaths={countryData.deaths.toLocaleString("en-US")}
-                                        todayDeaths={countryData.todayDeaths.toLocaleString(
+                                        totalCases={countryData.cases?.toLocaleString("en-US") || "N/A"}
+                                        todayCases={countryData.todayCases?.toLocaleString("en-US") || "N/A"}
+                                        activeCases={countryData.active?.toLocaleString("en-US") || "N/A"}
+                                        totalDeaths={countryData.deaths?.toLocaleString("en-US") || "N/A"}
+                                        todayDeaths={countryData.todayDeaths?.toLocaleString(
                                             "en-US"
-                                        )}
-                                        totalRecovered={
-                                            countryData.recovered !== null
-                                                ? countryData.recovered.toLocaleString("en-US")
-                                                : 0
-                                        }
-                                        critical={countryData.critical.toLocaleString("en-US")}
+                                        ) || "N/A"}
+                                        totalRecovered={countryData.recovered?.toLocaleString(
+                                            "en-US"
+                                        ) || "N/A"}
+                                        critical={countryData.critical?.toLocaleString("en-US") || "N/A"}
                                     />
                                 ))}
                             </div>
