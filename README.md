@@ -87,3 +87,5 @@ I've learnt so many things in the way of making this application 📝 and ways t
 
 [Cyrus mbithi](https://twitter.com/cyrusmbithi92)
 [Bill Kariri](https://github.com/BILLthebuilder)
+
+https://covid19ke.site
