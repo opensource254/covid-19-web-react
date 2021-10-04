@@ -1,4 +1,3 @@
-//fix the header files for them to render
 import React from "react"
 import { Link } from "gatsby"
 
