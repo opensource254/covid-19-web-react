@@ -39,8 +39,7 @@ class KenyaData extends React.Component {
 
         return (
             <React.Fragment>
-                <div className="heading--title">
-            //States the country the outbreak is confirmed 
+                <div className="heading--title"> 
                     <h1>Outbreak in Kenya</h1>
                 </div>
 
